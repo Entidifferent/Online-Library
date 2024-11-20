@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#books-section">BOOKS</a></li>
+                    <!-- Dropdown Categories -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">CATEGORIES</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">
+                                <a href="#">Category 1</a>
+                                <div class="sub-dropdown">
+                                    <a href="#">Subcategory 1.1</a>
+                                    <a href="#">Subcategory 1.2</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#">Category 2</a>
+                                <div class="sub-dropdown">
+                                    <a href="#">Subcategory 2.1</a>
+                                    <a href="#">Subcategory 2.2</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#">Category 3</a>
+                                <div class="sub-dropdown">
+                                    <a href="#">Subcategory 3.1</a>
+                                    <a href="#">Subcategory 3.2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#saved-books-section">SAVED BOOKS</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="../Authorization/auth.html" class="btn">Sign In</a>
+                <a href="../Authorization/auth.html#signup" class="btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <section id="books-section">
+            <h1>Welcome to the Online Library</h1>
+            <div class="book-list">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="/Main page/Covers/1.jpg" alt="Book 1">
+                    </div>
+                    <p>Book 1</p>
+                    <div class="book-actions">
+                        <button class="btn-action bookmark-btn">
+                            <img src="Icons/bookmark.png" alt="Bookmark" class="bookmark-icon" width="64" height="64">
+                        </button>
+                        <button class="btn-action like-btn">
+                            <img src="Icons/heart.png" alt="Like" class="like-icon" width="64" height="64">
+                        </button>
+                        <button class="btn-action download-btn">
+                            <img src="Icons/download.png" alt="Download" class="download-icon" width="64" height="64">
+                        </button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="/Main page/Covers/2.jpg" alt="Book 2">
+                    </div>
+                    <p>Book 2</p>
+                    <div class="book-actions">
+                        <button class="btn-action bookmark-btn">
+                            <img src="Icons/bookmark.png" alt="Bookmark" class="bookmark-icon" width="64" height="64">
+                        </button>
+                        <button class="btn-action like-btn">
+                            <img src="Icons/heart.png" alt="Like" class="like-icon" width="64" height="64">
+                        </button>
+                        <button class="btn-action download-btn">
+                            <img src="Icons/download.png" alt="Download" class="download-icon" width="64" height="64">
+                        </button>
+                    </div>
+                </div>
+                <!-- Thêm các book-card khác ở đây -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Entidi | © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
